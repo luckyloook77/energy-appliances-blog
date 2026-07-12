@@ -14,9 +14,7 @@ jobs:
         with:
           submodules: false  # Handle submodules manually to avoid auth issues
           fetch-depth: 0    # Needed for lastmod etc.
-      - name: Initialize submodules
-        run: |
-          git submodule update --init --recursive
+      
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
