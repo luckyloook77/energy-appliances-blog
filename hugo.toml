@@ -1,0 +1,36 @@
+baseURL = "https://username.github.io/energy-appliances-blog/"
+languageCode = "en-us"
+title = "Energy-Efficient Home Appliances for Small Apartments"
+theme = "PaperMod"
+
+[params]
+  description = "Reviews, guides, and tips for energy-saving appliances perfect for small living spaces."
+  author = "Your Name"
+  # Enable GitHub info if you want
+  # github = "yourusername"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Enable syntax highlighting
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    noClasses = false
